@@ -1,8 +1,12 @@
-# FactoryPattern
-DESIGN PATTERNS
----------------
-classification of patterns
--------------------------- 
-1. Creational patterns: provide object creation mechanisms that increase flexibility and resuse of existing code.
------------------------
-a.Factory Method: It provides the interface for creating objects in a super class but allows sub classes to alter the type of objects that will be created
+Factory pattern is one of the most used design patterns in Java. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
+
+In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface.
+
+Implementation
+We're going to create a Shape interface and concrete classes implementing the Shape interface. A factory class ShapeFactory is defined as a next step.
+
+FactoryPatternDemo, our demo class will use ShapeFactory to get a Shape object. It will pass information (CIRCLE / RECTANGLE / SQUARE) to ShapeFactory to get the type of object it needs.
+
+
+
+![factory_pattern_uml_diagram](https://user-images.githubusercontent.com/63951442/227305048-cd493986-81d1-4d38-8333-c8f7b04e874e.jpg)
